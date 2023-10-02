@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+.s1 {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  padding-left: 100px;
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+.s1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.socmedia {
+  position: relative;
+  display: flex;
+}
+.socicon {
+  position: relative;
+}
+.socicon a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 8px;
+  box-shadow: 0 4px 4px rgb(154, 138, 138);
+  transform: translateY(02) scale(1);
+  transition: 0.3s;
+}
+.socicon:hover a {
+  transform: translateY(-6px) scale(1.2);
+  margin: 0 20px;
+}
+.socicon a i {
+  font-size: 18px;
+  color: #000000;
+  line-height: 40px;
+  transition: 0.3s;
+}
+.socicon:hover a i {
+  color: #fff;
+}
+.socicon:hover:nth-child(3) a i {
+  color: #000;
+}
+.socicon span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: -1;
+}
+.socicon:hover span {
+  transform: translate(-50%, 90%) scale(1);
+}
+.socicon:nth-child(2):hover a {
+  background-color: #1da1f2;
+}
+.socicon:nth-child(1):hover a {
+  background-image: linear-gradient(
+    rgb(123, 111, 231),
+    rgb(231, 68, 234),
+    rgb(228, 109, 76),
+    rgb(227, 227, 95)
+  );
+}
+.socicon:nth-child(3):hover a {
+  background-color: #ddff00;
+}
+.socicon:nth-child(4):hover a {
+  background-color: #211f1f;
+}
+.socicon:nth-child(5):hover a {
+  background-color: hwb(204 0% 7%);
+}
+
+.socicon:nth-child(2):hover span {
+  color: #1da1f2;
+}
+.socicon:nth-child(1):hover span {
+  color: rgb(244, 34, 160);
+}
+.socicon:nth-child(3):hover span {
+  color: #6e7f00;
+}
+.socicon:nth-child(4):hover a {
+  background-color: #211f1f;
+}
+.socicon:nth-child(5):hover span {
+  color: hwb(204 0% 0%);
+}
